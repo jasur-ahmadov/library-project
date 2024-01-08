@@ -1,2 +1,2 @@
 # library-project
-This is a library project that I developed during my internship at e-Gov Development Center
+I worked on this library project while I was an intern at the e-Gov Development Center.
