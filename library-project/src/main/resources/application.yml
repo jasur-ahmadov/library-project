@@ -1,0 +1,42 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+  port: 8081
+
+spring:
+  datasource:
+    username: root
+    password: 2000
+    url: jdbc:mysql://localhost:3306/library
+
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: cesurehmedov594@gmail.com
+    password: gabrzaxeovtsyqtj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+application:
+  jwt:
+    secretKey: 'securesecuresecuresecuresecuresecuresecuresecuresecuresecure'
+    tokenPrefix: 'Bearer '
+    tokenExpirationAfterDays: 10
